@@ -1,0 +1,90 @@
+
+/* css reset */
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 9px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation Bar: Logo and img*/
+#logo img{
+    width: 60px;
+    margin: 27px;
+}
+
+/* Navigation Bar: List and styling*/
+#navbar ul{
+    display: flex;
+    /* background-color:yellow; */
+}
+#navbar{
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    /* display: block; */
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 12px;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+ #home::before{
+    content: "";
+    background: url('../img/spaghetti.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+/* Utility Class */
+
+/* h-primary{
+    font-size: 1.8rem;
+    padding: 10px;
+} */ 
